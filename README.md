@@ -1,73 +1,94 @@
 # Prishtina Open Brewery 🍻🔧
-
 ## Overview
 
-The **Open Source Brewery** is a research and development initiative dedicated to applying open-source technologies within the brewing industry. Beyond establishing a fully functional nano-brewery where enthusiasts can brew and collaborate, the project serves as an educational and innovation platform. Here, the community explores how technology can transform brewing processes — making them smarter, more accessible, and more efficient.
+**Open Source Brewery** is a research and development initiative exploring how open source technologies can optimize and reimagine the craft of beer brewing. Brewing is a complex and delicate process — one that requires careful control over temperature, timing, fermentation dynamics, and ingredient ratios. This project uses open source hardware and software as a testing ground to improve brewing precision and to foster innovation through community-driven experimentation.
 
-By embracing open-source principles, all designs, code, prototypes, and brewing recipes are shared freely, empowering individuals and communities to learn, adapt, and contribute to the future of craft brewing.
+Our goal is to empower brewers, makers, and researchers by providing open access to tools, prototypes, data, and methodologies that enhance brewing outcomes through smart, tech-enabled systems.
 
-## Objectives 🎯
+## Why Open Source? 🌍
 
-- **Democratize Brewing Knowledge**: Make the art and science of brewing accessible to everyone, regardless of experience.
-- **Integrate Open Technology**: Develop and implement open-source hardware and software solutions for monitoring, controlling, and optimizing brewing processes.
-- **Foster Innovation**: Encourage experimentation and innovation in brewing through collaboration and shared learning.
-- **Promote Citizen Science**: Inspire a culture of DIY innovation and community-driven research in the brewing industry.
+Open source enables a collaborative environment where innovation is accelerated, transparency is built-in, and experimentation is accessible to all. In the brewing context, this means:
 
-## Main Components 🏗️
+- 🔧 Developing custom monitoring and control systems with microcontrollers and sensors.
+- 📡 Gathering and sharing real-time brewing and fermentation data.
+- 🧠 Leveraging Machine Learning and LLMs to assist in recipe development.
+- 📚 Publishing all findings, code, and brewing recipes under open licenses for community use and iteration.
 
-### 🍺 Beer-O-Meter
-A custom-built device that:
-- **Measures beer flow** precisely through draft lines using flow sensors.
-- **Displays real-time dispensing data** on LED matrices.
-- **Controls access** to the draft system through **RFID authentication**, enabling user/session-based dispensing.
+## Core Technologies ⚙️
 
-### 🌡️ Fermentation Maintenance Systems
-Prototypes for maintaining and monitoring optimal fermentation conditions:
-- **Temperature Sensors**: Continuous monitoring of fermentation chamber temperatures.
-- **CO₂ Sensors**: Measuring CO₂ levels to gauge fermentation activity.
-- **Automation**: Future integrations will allow automated cooling/heating control based on sensor data.
+### 🖥️ Microcontrollers & Sensors
+We utilize a range of open hardware platforms to build modular systems for real-time monitoring and control:
+- **Microcontrollers**: ESP8266, ESP32, and Arduino boards.
+- **Sensors**: 
+  - Temperature and humidity sensors (for mash, fermentation, and storage)
+  - CO₂ sensors (for fermentation tracking)
+  - Flow sensors (for draft line monitoring and dispensing metrics)
 
-### 🧠 Machine Learning for Brewing Recipes
-Exploratory research on using machine learning algorithms to:
-- **Analyze past brewing data** (ingredients, brewing conditions, outcomes).
-- **Suggest optimized brewing recipes** based on desired taste profiles or brewing goals.
-- **Predict fermentation behavior** and propose dynamic adjustments during brewing or fermentation phases.
+### 🍺 Prototypes
 
-## Why Open Source? 🌐
+#### 🔄 Beer-O-Meter
+A custom device that:
+- Measures flow in real-time using a flow sensor.
+- Displays live output on 8x8 RGB LED Neomatrix panels.
+- Controls draft access via RFID authentication.
+- Helps breweries quantify and manage dispensing more accurately.
 
-- **Transparency**: All hardware schematics, software code, and brewing recipes are available for public use and modification.
-- **Collaboration**: The community is invited to contribute improvements, suggest new ideas, and build on existing prototypes.
-- **Education**: By exposing every part of the system — from brewing to sensor electronics to algorithm development — we empower people to learn by doing.
-- **Innovation**: Open ecosystems accelerate innovation by enabling rapid prototyping, peer review, and collective problem-solving.
+#### 🌡️ Fermentation Maintenance
+- Temperature and CO₂ sensors embedded in fermentation chambers.
+- Wireless data logging using ESP-based devices.
+- Planned expansion to active heating/cooling control for automated fermentation curve management.
 
-## Community Involvement 🤝
+### 🧠 Machine Learning & Large Language Models
+We explore the use of AI in brewing through:
+- **Recipe Generation**: Using LLMs trained or prompted with datasets of brewing recipes and sensory profiles to suggest novel or optimized brews.
+- **Data-Driven Brewing**: Applying ML models to historical brewing logs to predict outcomes or identify optimal process variables.
+- **Natural Language Interfaces**: Enabling conversational interfaces where users can ask questions like *"Suggest a hoppy IPA recipe based on what’s in my fridge."*
 
-Whether you are:
-- A brewer 🍺
-- A maker 🔧
-- A coder 💻
-- A data scientist 📈
-- Or simply a curious enthusiast 👀
+### 🖥️ Microprocessor Integration
+- **Raspberry Pi** devices serve as local servers for sensor aggregation, display dashboards, and logging.
+- Python scripts and web-based dashboards provide real-time visualization and analysis of brewing parameters.
 
-You are welcome to join our community! You can contribute by:
-- Testing prototypes
-- Suggesting new ideas
-- Helping with software or hardware development
-- Sharing your brewing experiences and recipes
+## Community Impact 🤝
 
-Together, we can redefine how brewing and technology interact — creating a smarter, more inclusive craft brewing culture.
+This project is not only a toolset — it's a platform for **citizen science** and **open innovation** in brewing. By sharing knowledge, tools, and results, we invite brewers, engineers, data scientists, and hobbyists to:
 
-## Project Status 🚀
+- Collaborate on hardware and software development.
+- Run their own experiments and share results.
+- Contribute new sensor integrations, dashboards, or ML models.
+- Participate in data collection for AI training.
 
-- Nano-brewery operational ✅
-- Beer-O-Meter prototype functional ✅
-- Fermentation monitoring prototypes in testing ⚙️
-- Machine Learning experiments ongoing 🧪
-- Open-source documentation in progress 📚
+## Open Resources 📂
+
+- ✅ All source code (firmware, backend, ML scripts)
+- ✅ Hardware schematics and BOMs
+- ✅ Brewing logs and datasets (for ML experimentation)
+- ✅ Open recipe database (community-submitted + AI-generated)
+- ✅ Step-by-step build instructions
+
+## Project Status 🛠️
+
+| Component                | Status          |
+|--------------------------|-----------------|
+| Nano-brewery setup       | ✅ Complete     |
+| Beer-O-Meter             | ✅ Operational  |
+| Fermentation monitoring  | ⚙️ In testing  |
+| ML recipe generation     | 🧪 Prototyping |
+| Public documentation     | 📚 In progress |
 
 ---
 
-**Let's brew, build, and innovate — together!** 🍻🛠️  
-Check back often for new developments, and feel free to contribute!
+## Get Involved 👥
 
-[Visit more projects at GitHub/sepse](https://github.com/sepse)
+This is a living, evolving project. You can:
+- Fork the repo and contribute new features or fixes
+- Share your brewing logs for AI experimentation
+- Propose improvements to hardware designs
+- Help test sensor integrations or control loops
+- Add your own brewing recipes to the public collection
+
+---
+
+**Let’s brew smarter, together.** 🍻  
+Explore the code, build your own system, and join a community where technology and tradition come together to make better beer.
+
+🔗 [See more at github.com/sepse](https://github.com/sepse)
